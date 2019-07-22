@@ -6,9 +6,9 @@ import datetime
 ## THINGS TO CONFIGURE
 ## ---------------------------------------------------------------------
 
-AUTHOR = u'A blog-o-matic user'
-SITENAME = u'My personal blog with blog-o-matic'
-SITESUBTITLE = u'This is where I do test things'
+AUTHOR = u'Adriana'
+SITENAME = u'Adriana Patterson Ip'
+SITESUBTITLE = u'Science || Coding || Baking'
 SITEURL = u'/'
 DEFAULT_LANG = u'en'
 DEFAULT_CATEGORY = 'blog'
@@ -42,7 +42,7 @@ SOCIAL = (('Twitter', 'http://twitter.com/iranzop'),
 
 # TWITTER_USERNAME = "fillit"
 # Update if you use amazon links
-AMAZON_ONELINK = "23824450-ef77-4537-9259-8590465886f1"
+# AMAZON_ONELINK = "23824450-ef77-4537-9259-8590465886f1"
 
 # GOOGLE_ANALYTICS tracking ID
 # GOOGLE_ANALYTICS = "UA-81705-12"
@@ -69,7 +69,7 @@ PHOTO_THUMB = (192, 144, 60)
 PHOTO_SQUARE_THUMB = False
 PHOTO_RESIZE_JOBS = 5
 PHOTO_WATERMARK = True
-PHOTO_WATERMARK_TEXT = "© Pablo Iranzo Gómez (https://iranzo.github.io)"
+PHOTO_WATERMARK_TEXT = "© Adriana Patterson Ip (https://www.adrianapattersonip.com)"
 PHOTO_WATERMARK_IMG = ''
 PHOTO_EXIF_KEEP = False
 PHOTO_EXIF_REMOVE_GPS = True
