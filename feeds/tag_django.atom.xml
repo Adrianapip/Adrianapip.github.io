@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adriana Patterson Ip - Django</title><link href="/" rel="alternate"></link><link href="feeds/tag_django.atom.xml" rel="self"></link><id>/</id><updated>2019-07-14T00:00:00+02:00</updated><subtitle>Science || Coding || Baking</subtitle><entry><title>Tasty Pastry is live</title><link href="blog/2019/07/14/tasty-pastry-live/" rel="alternate"></link><published>2019-07-14T00:00:00+02:00</published><updated>2019-07-14T00:00:00+02:00</updated><author><name>Adriana</name></author><id>tag:None,2019-07-14:blog/2019/07/14/tasty-pastry-live/</id><summary type="html">&lt;p&gt;Some background machanics of how I use heroku for my django app&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've hit another milestone and finally made my website live. After weeks of figuring out how I want to present my recipes, and what my plans are for the site, it was finally ready to push out to the production server. &lt;/p&gt;
+&lt;p&gt;I've learned quite a bit along the way, and though most of it is specific to django app development (which I believe I have just scratched the surface) I try to make some abstract observations about processes and learning in general. It is my way of making connections between topics and possibly apply ideas across disciplines. I find I can learn many things this way.&lt;/p&gt;
+&lt;p&gt;That's not to say that I am quick at learning. That is farther from the truth. But, I do believe that I have a higher tolerance for learning new things, in that I will easily pick up many things up at once and try lots of things to figure out what I like. &lt;/p&gt;
+&lt;p&gt;Anyway. The main theme that keeps running through my mind as I attempt to learn django/python/app development, is this: &lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Make&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="k"&gt;work&lt;/span&gt;
+&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Make&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="n"&gt;fast&lt;/span&gt;
+&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Make&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="k"&gt;simple&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;(from &lt;a href="https://www.biostarhandbook.com/index.html"&gt;the Biostar Handbook&lt;/a&gt; and bioinformatics pipelines)&lt;/p&gt;
+&lt;p&gt;I think #1 is the most difficult hurdle to overcome and is often where most people (including myself) give up. &lt;/p&gt;
+&lt;p&gt;But I love the way that the biostarhandbook describes #1:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"...get the entire process moving - not just the beginning - the whole thing. It will be hacky, it will be squeaky, it may need to be held together with duct tape. Go all the way!"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Because of this, every project that I think about putting together something, even if it is held together by duct tape. (Quite literally - I put together a drip irrigation setup for my garden and the inital pvc piping was indeed held together by duct tape.)&lt;/p&gt;
+&lt;p&gt;I think it's so tempting to want something polished, finished and beautiful at the getgo, but how many times is ever possible?&lt;/p&gt;
+&lt;p&gt;So the site is up. There is duct tape remaining on some parts, but it's up. &lt;/p&gt;
+&lt;p&gt;Onwards and upwards to #2 (make it fast) and #3 (make it simple).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;What I'm really digging about app development are all the checkpoints. The scientist in me is appreciating that there are different stages of development to prevent and debug errors. (If only bench research had this sort of feature...)&lt;/p&gt;
+&lt;p&gt;You have various environments to run your app before it becomes live. First, locally on your machine, then onto a staging environment online, and then onto your production, or live site. Within each of these steps you can add even more checkpoints, like branches using git on your local environment. &lt;/p&gt;
+&lt;p&gt;It took some time for me to learn the commands and general workarounds, but I have a somewhat good understanding. At least, enough to go back and fix things if I break something on the app. &lt;/p&gt;
+&lt;p&gt;Here is my pipeline on how I push to heroku using git:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Verify that all pages are presenting correctly. Click on the recently updated pages to make sure there are no errors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check to see if the site is mobile friendly:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python3 manage.py runserver 0.0.0.0:8000&lt;/code&gt; allows you to access the site on your network, check your computer's IP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prepare your static files for deployment&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python3 manage.py collectstatic&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Commit all changes to your working branch, pushing to master if needed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using heroku CLI, you can check to see what apps you have (sometimes I forget what I named them)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;heroku apps&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push to heroku's branch your latest commits. For instance, I named my remote heroku branch for staging "staging", and I have all my recent changes commited to my master.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push staging master&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When (there is never an 'if') there are errors&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;heroku log --tail --remote staging&lt;/code&gt;
+If however this is not helpful, you can try logentries (info from &lt;a href="https://stackoverflow.com/questions/19410811/how-do-you-diagnose-a-500-error-on-heroku-when-there-is-no-error-message-in-the"&gt;this stackoverflow answer&lt;/a&gt;).
+This helps me diagnose by giving more details on my errors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the staging looks good, you can push your commits to the live server, which is called "prod" in my case:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push prod master&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="https://www.tastypastry.kitchen/"&gt;Updates&lt;/a&gt; are now live! Onto the next issue...&lt;/p&gt;</content><category term="Python"></category><category term="Django"></category><category term="Tasty Pastry"></category></entry></feed>
