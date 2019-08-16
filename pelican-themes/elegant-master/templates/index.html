@@ -50,7 +50,7 @@
     </header>
     {% endif %}
 
-    <div class="row-fluid">
+    <div class="row-fluid padding">
         {% if LANDING_PAGE_TITLE and landing_page.page %}
         {% set css_class = 'span8 offset2' %}
         {% if PROJECTS and LANDING_PAGE_TITLE %}
@@ -86,7 +86,7 @@
         {% endif %}
     </div>
     
-    <div class="row-fluid m-5">
+    <div class="row-fluid padding">
         <header>
             <h1 class='text-center'>On Instagram...</h1>
         </header>
@@ -94,7 +94,11 @@
     <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/58fcf9f354f1582382d1cc0588d6dfac.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
     </div>
 
-    <div class="row-fluid m-3">
+
+
+    <div class="row-fluid padding">
+
+
 <!-- Goodreads WIDGET -->
         <h1 class='text-center'>Currently reading...</h1>
         <style type="text/css" media="screen">
@@ -136,7 +140,7 @@
     {% if articles and PROJECTS and LANDING_PAGE_TITLE %}
     {% set css_class = 'span12' %}
     {% endif %}
-    <div class="row-fluid">
+    <div class="row-fluid padding">
         <div class="{{css_class}}">
             <header>
             <h1 id="recent-posts" class='text-center'>On my mind recently... <a id="allposts" href="{{ SITEURL }}/{{ ARCHIVES_URL|default('archives') }}">all</a></h1>

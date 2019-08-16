@@ -27,3 +27,7 @@ a:hover {
 * {
 	font-family: 'Quattrocento', serif;
 }
+
+.padding {
+	padding: 40px;
+}

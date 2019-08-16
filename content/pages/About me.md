@@ -5,8 +5,8 @@ Date: 07-24-2019
 Status: Hidden
 Slug: landing-page-about-hidden
 
-Hello, I'm Adriana. I work mainly on computational-based research that develops and builds medical diagnostics. I'm currently a scientific consultant at [Dranalytics](https://www.dranalytyics.co).
+Hello! I'm Adriana. I'm a scientific consultant at [Dranalytics](https://www.dranalytyics.co) working on computional-based research for medical diagnostics.
 
-I'm a self-taught coder and love exploring different ways that technology can positively influence science and, in general, life. 
+I'm also a self-taught coder and enjoying working on (probably too) many projects simultaneously, largely in Python.  
 
-Here you can find all the current things I'm working on, thinking about, or reading.    
+This site is a catchall for all the stuff that takes up space in my brain, including my thoughts on: recent reads, baking adventures, various scientific ideas, and programming snippets.    
