@@ -1,2 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Adriana Patterson Ip</title><link href="/" rel="alternate"></link><link href="feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2019-08-16T10:00:29Z</updated><subtitle>Science || Coding || Baking</subtitle></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Adriana Patterson Ip</title><link href="/" rel="alternate"></link><link href="feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2019-08-01T00:00:00+02:00</updated><subtitle>Science || Coding || Baking</subtitle><entry><title>Wagtail for my Tasty Pastry blog</title><link href="blog/2019/08/01/wagtail-for-my-tasty-pastry-blog/" rel="alternate"></link><published>2019-08-01T00:00:00+02:00</published><updated>2019-08-01T00:00:00+02:00</updated><author><name>Adriana</name></author><id>tag:None,2019-08-01:blog/2019/08/01/wagtail-for-my-tasty-pastry-blog/</id><summary type="html">&lt;p&gt;How I came to choose wagtail as a cms, and some useful references I've collected&lt;/p&gt;</summary><content type="html">&lt;p&gt;I started Tasty Pastry by coding the html/css manually (and pretty crappily at that) but as a means to figure out the mechanics of my site. I knew I wanted an interactive cooking app, but I also wanted a blog feature. In the beginning, it was not clear if these were two seperate apps in the Tasty Pastry project. In my mind, all things could be considered a 'blog post', but not all blog posts would belong in the interactive cooking app. For instance, consider a write up that compares pie pan types. Where would such information belong?&lt;/p&gt;
+&lt;p&gt;I decided to put aside the interactive cooking app and start first with developing an app to create and categorize blog posts.&lt;/p&gt;
+&lt;p&gt;As I started writing 'blog posts', I figured out some sort of generic layout that I was happy with. I would come up with a recipe in Notion to  maintain my files and references, and then manually move that content into hand written html files. Recipes follow a basic format: a block of text for the introduction, a table for ingredients, and a list for intructions. &lt;/p&gt;
+&lt;p&gt;Copying and pasting got real tedious, real fast.&lt;/p&gt;
+&lt;p&gt;It was time to move onto a content management system (cms) to maintain my files. &lt;/p&gt;
+&lt;p&gt;I'm aware of different established populare cms's: wordpress, etc. However. I'm a complicated creature. I have this tendancy to try to combine everything I know into a single project as to potentially yield the best/most efficient set of results. 🤔&lt;/p&gt;
+&lt;p&gt;If I were keen on learning how to bake really well, I would just go with wordpress, or squarespace, and focus on my writing and baking. But, I'm also interested in becoming a better programmer. So let's combine the two and design this damn thing from the ground up! &lt;/p&gt;
+&lt;p&gt;My thinking behind this is that eventually, I will want to have more control over Tasty Pastry. That is, I'm not planning on it being just a baking blog. There are plenty of great ones out there already, and I feel I can leverage my skills in a unique way. &lt;/p&gt;
+&lt;p&gt;I went with wagtail for a couple of reasons. It was &lt;a href="https://hellowebbooks.com/news/moved-hellowebbookscom-static-site-generator-full-django-site/"&gt;suggested by Hello Web App author Tracy Osborn&lt;/a&gt; so I just went and started downloading the packages. Once I realized how simple it was to get it up and working (I knew a little about Django at that point) I just kept going.&lt;/p&gt;
+&lt;p&gt;It took me about a day to get it working within my project, and to get the models and templates written.&lt;/p&gt;
+&lt;p&gt;Working with an app that already has lots of documentation allows me to understand the django framework a little better - how models work with templates, and how data is stored and retrieved in terms of managing content. &lt;/p&gt;
+&lt;p&gt;If you're looking for a CMS that has good documentation, from a beginner's perspective, this may be a place to start. &lt;/p&gt;
+&lt;h3 id="here-are-some-good-references-that-may-help-you-alond-your-wagtail-journey"&gt;Here are some good references that may help you alond your wagtail journey:&lt;a class="headerlink" href="#here-are-some-good-references-that-may-help-you-alond-your-wagtail-journey" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.accordbox.com/blog/wagtail-tutorials-building-blog-part-2/"&gt;I found these tutorials sometimes more helpful than the official wagtail documentation.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/channel/UCwbsAsY_C6EmGI6_JHhECEQ"&gt;Coding for Everybody also has some excellent wagtail video tutorials.&lt;/a&gt; I really enjoy his laid-back teaching style and he tends to explain things pretty thoroughly. Highly recommend. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://docs.wagtail.io/en/latest/topics/streamfield.html#streamfield"&gt;I use streamfield blocks for my editing interface.&lt;/a&gt; It just gives me more flexiblity with the types of content I want to post.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/springload/awesome-wagtail#bloggingnews"&gt;A github awesome list&lt;/a&gt; containing different packages you can add to your wagtail interface and other cool resources that the wagtail community has built.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/wagtail/wagtail"&gt;The github repo containing the source code for wagtail.&lt;/a&gt; Here I was able to find some html files that I needed in order to customize my blog. For instance, I altered the table.html file for my recipe ingredients tables so that they functioned in the way I wanted: checkboxes before every ingredient, etc.&lt;/p&gt;</content><category term="Python"></category><category term="Django"></category><category term="Tasty Pastry"></category></entry><entry><title>Tasty Pastry is live</title><link href="blog/2019/07/14/tasty-pastry-live/" rel="alternate"></link><published>2019-07-14T00:00:00+02:00</published><updated>2019-07-14T00:00:00+02:00</updated><author><name>Adriana</name></author><id>tag:None,2019-07-14:blog/2019/07/14/tasty-pastry-live/</id><summary type="html">&lt;p&gt;Some background machanics of how I use heroku for my django app&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've hit another milestone and finally made my website live. After weeks of figuring out how I want to present my recipes, and what my plans are for the site, it was finally ready to push out to the production server. &lt;/p&gt;
+&lt;p&gt;I've learned quite a bit along the way, and though most of it is specific to django app development (which I believe I have just scratched the surface) I try to make some abstract observations about processes and learning in general. It is my way of making connections between topics and possibly apply ideas across disciplines. I find I can learn many things this way.&lt;/p&gt;
+&lt;p&gt;That's not to say that I am quick at learning. That is farther from the truth. But, I do believe that I have a higher tolerance for learning new things, in that I will easily pick up many things up at once and try lots of things to figure out what I like. &lt;/p&gt;
+&lt;p&gt;Anyway. The main theme that keeps running through my mind as I attempt to learn django/python/app development, is this: &lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Make&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="k"&gt;work&lt;/span&gt;
+&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Make&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="n"&gt;fast&lt;/span&gt;
+&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Make&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="k"&gt;simple&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;(from &lt;a href="https://www.biostarhandbook.com/index.html"&gt;the Biostar Handbook&lt;/a&gt; and bioinformatics pipelines)&lt;/p&gt;
+&lt;p&gt;I think #1 is the most difficult hurdle to overcome and is often where most people (including myself) give up. &lt;/p&gt;
+&lt;p&gt;But I love the way that the biostarhandbook describes #1:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"...get the entire process moving - not just the beginning - the whole thing. It will be hacky, it will be squeaky, it may need to be held together with duct tape. Go all the way!"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Because of this, every project that I think about putting together something, even if it is held together by duct tape. (Quite literally - I put together a drip irrigation setup for my garden and the inital pvc piping was indeed held together by duct tape.)&lt;/p&gt;
+&lt;p&gt;I think it's so tempting to want something polished, finished and beautiful at the getgo, but how many times is ever possible?&lt;/p&gt;
+&lt;p&gt;So the site is up. There is duct tape remaining on some parts, but it's up. &lt;/p&gt;
+&lt;p&gt;Onwards and upwards to #2 (make it fast) and #3 (make it simple).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;What I'm really digging about app development are all the checkpoints. The scientist in me is appreciating that there are different stages of development to prevent and debug errors. (If only bench research had this sort of feature...)&lt;/p&gt;
+&lt;p&gt;You have various environments to run your app before it becomes live. First, locally on your machine, then onto a staging environment online, and then onto your production, or live site. Within each of these steps you can add even more checkpoints, like branches using git on your local environment. &lt;/p&gt;
+&lt;p&gt;It took some time for me to learn the commands and general workarounds, but I have a somewhat good understanding. At least, enough to go back and fix things if I break something on the app. &lt;/p&gt;
+&lt;p&gt;Here is my pipeline on how I push to heroku using git:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Verify that all pages are presenting correctly. Click on the recently updated pages to make sure there are no errors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check to see if the site is mobile friendly:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python3 manage.py runserver 0.0.0.0:8000&lt;/code&gt; allows you to access the site on your network, check your computer's IP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Prepare your static files for deployment&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python3 manage.py collectstatic&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Commit all changes to your working branch, pushing to master if needed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using heroku CLI, you can check to see what apps you have (sometimes I forget what I named them)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;heroku apps&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push to heroku's branch your latest commits. For instance, I named my remote heroku branch for staging "staging", and I have all my recent changes commited to my master.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push staging master&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When (there is never an 'if') there are errors&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;heroku log --tail --remote staging&lt;/code&gt;
+If however this is not helpful, you can try logentries (info from &lt;a href="https://stackoverflow.com/questions/19410811/how-do-you-diagnose-a-500-error-on-heroku-when-there-is-no-error-message-in-the"&gt;this stackoverflow answer&lt;/a&gt;).
+This helps me diagnose by giving more details on my errors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the staging looks good, you can push your commits to the live server, which is called "prod" in my case:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push prod master&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="https://www.tastypastry.kitchen/"&gt;Updates&lt;/a&gt; are now live! Onto the next issue...&lt;/p&gt;</content><category term="Python"></category><category term="Django"></category><category term="Tasty Pastry"></category></entry><entry><title>Why I chose Pelican and how I update blog posts</title><link href="blog/2019/06/13/pelican-sites-and-creating-blogposts/" rel="alternate"></link><published>2019-06-13T00:00:00+02:00</published><updated>2019-06-13T00:00:00+02:00</updated><author><name>Adriana</name></author><id>tag:None,2019-06-13:blog/2019/06/13/pelican-sites-and-creating-blogposts/</id><summary type="html">&lt;p&gt;The advantages of a static site, and a brief tutorial how I create blog posts.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've explored creating all kinds of websites.  &lt;/p&gt;
+&lt;p&gt;It began years ago with a Geocities site (!!) that I made when I had my wisdom teeth pulled and I didn't want to leave my room. Since then, I've created sites using: Tumbler, Blogger, Wordpress, HuGo, Squarespace, a Pelican-generated site and a Python-Django site. I'm sure I've left some out. &lt;/p&gt;
+&lt;p&gt;I am by no means an expert. Until recently, it's been more of a light hobby than a necessity. &lt;/p&gt;
+&lt;p&gt;Eventually, I needed something for my &lt;a href="www.dranalytics.co"&gt;consulting business&lt;/a&gt; and I now I've gone the personal route because it didn't seem appropriate to write about making lemon curd alongside recent news on DNA sequence alignment software.&lt;/p&gt;
+&lt;p&gt;For my company I chose squarespace, which is just lovely and easy to set up.&lt;/p&gt;
+&lt;p&gt;I chose to go with Pelican for my personal blog because:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I love Python;&lt;/li&gt;
+&lt;li&gt;a static site seems appropriate for just linking to recent projects, book lists, and random thoughts (no complex user interfaces, no databases....yet); &lt;/li&gt;
+&lt;li&gt;the documentation is pretty substantial (as a relatively new coder, this is essential);&lt;/li&gt;
+&lt;li&gt;and unlike my company website, I wanted to build something from scratch.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="the-gist-of-pelican"&gt;The Gist of Pelican&lt;a class="headerlink" href="#the-gist-of-pelican" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Pelican is, by definition, a static site generator. In a nutshell, what this means is that webpages are generated on my computer, pushed to a server, and then presented when accessed by someone on the internet. &lt;/p&gt;
+&lt;p&gt;In contrast, a dynamic website has pages that are created in real-time as it is accessed by the user. This can include drawing data from a database, logging into apps, amongst other things. &lt;/p&gt;
+&lt;h3 id="how-i-use-pelican"&gt;How I use Pelican&lt;a class="headerlink" href="#how-i-use-pelican" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I have a folder that contains my content in the form of either markdown or html. Whenever I want to add a blog post, I start a new markdown file, add the necessary metadata, and start writing. &lt;/p&gt;
+&lt;p&gt;Then I perform these commands to update my website, which is hosted by Github User pages.&lt;/p&gt;
+&lt;p&gt;First, I save my changes to my 'source branch'.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$&lt;span class="nv"&gt;git&lt;/span&gt; &lt;span class="nv"&gt;add&lt;/span&gt; .
+# &lt;span class="nv"&gt;stages&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;current&lt;/span&gt; &lt;span class="nv"&gt;changes&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;commit&lt;/span&gt;
+
+$&lt;span class="nv"&gt;git&lt;/span&gt; &lt;span class="nv"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;m&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;blog update&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+# &lt;span class="nv"&gt;commits&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;all&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;changes&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;repository&lt;/span&gt;, &lt;span class="nv"&gt;with&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;message&lt;/span&gt; &lt;span class="nv"&gt;of&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="s"&gt;blog update&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;
+
+$&lt;span class="nv"&gt;git&lt;/span&gt; &lt;span class="nv"&gt;push&lt;/span&gt;
+# &lt;span class="nv"&gt;submits&lt;/span&gt; &lt;span class="nv"&gt;these&lt;/span&gt; &lt;span class="nv"&gt;committed&lt;/span&gt; &lt;span class="nv"&gt;changes&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;remote&lt;/span&gt; &lt;span class="nv"&gt;repository&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Since user pages only deploy from the 'master' branch in your repository, you can just push your source's 'output' folder to the master branch and your blog will be updated. A way to do this is:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;pelicanconf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+&lt;span class="c1"&gt;# uses the pelican command with path to content (&amp;#39;content&amp;#39; here), to an output&lt;/span&gt;
+&lt;span class="c1"&gt;# folder of &amp;#39;output&amp;#39;, using settings file &amp;#39;pelicanconf.py&amp;#39;&lt;/span&gt;
+
+&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;ghp&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;output&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
+&lt;span class="c1"&gt;# githubpages import will update the master branch with contents of output &lt;/span&gt;
+&lt;span class="c1"&gt;# from the remote origin&lt;/span&gt;
+
+&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
+&lt;span class="c1"&gt;# updates the the remote master branch, publishing the site&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Sources:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.getpelican.com/en/4.0.1/tips.html"&gt;https://docs.getpelican.com/en/4.0.1/tips.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ndpsoftware.com/git-cheatsheet.html#loc=workspace;"&gt;http://ndpsoftware.com/git-cheatsheet.html#loc=workspace;&lt;/a&gt; &lt;/p&gt;</content><category term="Python"></category><category term="Pelican"></category><category term="Blogging"></category></entry><entry><title>Modus Operandi</title><link href="blog/2019/05/13/modus-operandi/" rel="alternate"></link><published>2019-05-13T00:00:00+02:00</published><updated>2019-05-13T00:00:00+02:00</updated><author><name>Adriana</name></author><id>tag:None,2019-05-13:blog/2019/05/13/modus-operandi/</id><summary type="html">&lt;p&gt;Why this site exists&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've always wanted a central location for notes on my projects for a while. When I worked in a lab, there was the almighty Lab Notebook. Covered in coffee stains, reagents, and goodness knows what else (don't ask I worked with mice 🐁) these notebooks were handwritten time capsules that contained little bits of your past. &lt;/p&gt;
+&lt;p&gt;Going back and reading it most of the time is like: 'what the heck was I thinking, why did I ...' 🤷🏻‍♀️🤦🏻‍♀️&lt;/p&gt;
+&lt;p&gt;Handwritten notebooks seem archiac at first. Passed down through centuries of scientists, it's required for good reason. &lt;/p&gt;
+&lt;p&gt;You can't really move forward unless you learn from the (mistakes and deep analysis) of the past. &lt;/p&gt;
+&lt;p&gt;Plus, what person can remember every. single. little. detail. &lt;/p&gt;
+&lt;p&gt;Recently I've been feeling a common thread in my current work. Something I should keep record of.  &lt;/p&gt;
+&lt;p&gt;I typically categorize the work by the time of day it's done: &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;During the day I consult (mainly science-y stuff) for my business. It could be administrative nonsense, heavy research/writing, or compuational work. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the evenings I try to spend time on side projects, which currently is building a baking app. (The more delicious output of this project takes place on the weekends, which entails loads of actual baking in my kitchen.) &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In other words, I want to document the 'backend', which primarily consists of programming, designing, and organizing, of the 'frontend' of my work, which is what people see: my genomics computational stuff, my analytics blog, my baking app. &lt;/p&gt;
+&lt;p&gt;There is all this underlying computational/coding work of which I am largely self-taught. That means I make lots of mistakes. Like 99% of the time.  &lt;/p&gt;
+&lt;p&gt;I'm learning as I go. I actually love (like really, love love love) learning but, it is something of a mixed blessing. I will forgo the timeline of a project if I can simply linger on a topic for a little while to make sure I understand every aspect of it. That's where this place comes in handy - sharing what I learned, what I messed up, how I fixed stuff.      &lt;/p&gt;
+&lt;p&gt;My online Lab Notebook. With less mice.&lt;/p&gt;</content><category term="Python"></category><category term="Pelican"></category></entry></feed>

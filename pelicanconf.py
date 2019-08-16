@@ -29,9 +29,9 @@ LANDING_PAGE_TITLE = "Welcome!"
 # Project Info
 PROJECTS_TITLE = 'Current Projects'
 PROJECTS = [{'name': 'Dranalytics', 'url': 'https://www.dranalytics.co',
-             'description': 'Scientific consulting and compuational biology tutorials'},
+             'description': 'Scientific consulting and computational biology tutorials'},
              {'name': 'Tasty Pastry', 'url': 'https://www.tastypastry.kitchen',
-             'description': 'My baking blog built with python and django'},
+             'description': 'My baking adventure blog, built with python + django'},
             {'name': "Adriana's Blog", 'url': '/archives',
              'description': 'Thoughts on coding, bioinformatics, etc.'},]
 
