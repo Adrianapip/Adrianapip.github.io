@@ -10,18 +10,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="Python, Django, Tasty Pastry, General, " />
+<meta name="keywords" content="Python, Django, Tasty Pastry, Wagtail, Heroku, General, " />
 
-<meta property="og:title" content="Wagtail for my Tasty Pastry blog "/>
-<meta property="og:url" content="../../../../../blog/2019/08/01/wagtail-for-my-tasty-pastry-blog/" />
-<meta property="og:description" content="How I came to choose wagtail as a cms, and some useful references I&#39;ve collected" />
+<meta property="og:title" content="Deploying Wagtail on heroku "/>
+<meta property="og:url" content="../../../../../blog/2019/09/05/deplying-wagtail-on-heroku/" />
+<meta property="og:description" content="How I deployed wagtail as my cms for my baking blog" />
 <meta property="og:site_name" content="Adriana Patterson Ip" />
 <meta property="og:article:author" content="Adriana" />
-<meta property="og:article:published_time" content="2019-08-01T00:00:00+02:00" />
-<meta name="twitter:title" content="Wagtail for my Tasty Pastry blog ">
-<meta name="twitter:description" content="How I came to choose wagtail as a cms, and some useful references I&#39;ve collected">
+<meta property="og:article:published_time" content="2019-09-05T00:00:00+02:00" />
+<meta name="twitter:title" content="Deploying Wagtail on heroku ">
+<meta name="twitter:description" content="How I deployed wagtail as my cms for my baking blog">
 
-        <title>Wagtail for my Tasty Pastry blog  · Adriana Patterson Ip
+        <title>Deploying Wagtail on heroku  · Adriana Patterson Ip
 </title>
         
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
@@ -76,8 +76,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="../../../../../blog/2019/08/01/wagtail-for-my-tasty-pastry-blog/">
-                Wagtail for my Tasty Pastry blog
+            <a href="../../../../../blog/2019/09/05/deplying-wagtail-on-heroku/">
+                Deploying Wagtail on heroku
             </a>
         </h1>
     </header>
@@ -86,24 +86,47 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
             
-            <p>I started Tasty Pastry by coding the html/css manually (and pretty crappily at that) but as a means to figure out the mechanics of my site. I knew I wanted an interactive cooking app, but I also wanted a blog feature. In the beginning, it was not clear if these were two seperate apps in the Tasty Pastry project. In my mind, all things could be considered a 'blog post', but not all blog posts would belong in the interactive cooking app. For instance, consider a write up that compares pie pan types. Where would such information belong?</p>
-<p>I decided to put aside the interactive cooking app and start first with developing an app to create and categorize blog posts.</p>
-<p>As I started writing 'blog posts', I figured out some sort of generic layout that I was happy with. I would come up with a recipe in Notion to  maintain my files and references, and then manually move that content into hand written html files. Recipes follow a basic format: a block of text for the introduction, a table for ingredients, and a list for intructions. </p>
-<p>Copying and pasting got real tedious, real fast.</p>
-<p>It was time to move onto a content management system (cms) to maintain my files. </p>
-<p>I'm aware of different established popular cms's: wordpress, etc. However. I'm a complicated creature. I have this tendancy to try to combine everything I know into a single project as to potentially yield the best/most efficient set of results. 🤔</p>
-<p>If I were keen on learning how to bake really well, I would just go with wordpress, or squarespace, and focus on my writing and baking. But, I'm also interested in becoming a better programmer. So let's combine the two and design this damn thing from the ground up! </p>
-<p>My thinking behind this is that eventually, I will want to have more control over Tasty Pastry. That is, I'm not planning on it being just a baking blog. There are plenty of great ones out there already, and I feel I can leverage my skills in a unique way. </p>
-<p>I went with wagtail for a couple of reasons. It was <a href="https://hellowebbooks.com/news/moved-hellowebbookscom-static-site-generator-full-django-site/">suggested by Hello Web App author Tracy Osborn</a> so I just went and started downloading the packages. Once I realized how simple it was to get it up and working (I knew a little about Django at that point) I just kept going.</p>
-<p>It took me about a day to get it working within my project, and to get the models and templates written.</p>
-<p>Working with an app that already has lots of documentation allows me to understand the django framework a little better - how models work with templates, and how data is stored and retrieved in terms of managing content. </p>
-<p>If you're looking for a CMS that has good documentation, from a beginner's perspective, this may be a place to start. </p>
-<h3 id="here-are-some-good-references-that-may-help-you-along-your-wagtail-journey">Here are some good references that may help you along your wagtail journey:<a class="headerlink" href="#here-are-some-good-references-that-may-help-you-along-your-wagtail-journey" title="Permanent link">&para;</a></h3>
-<p><a href="https://www.accordbox.com/blog/wagtail-tutorials-building-blog-part-2/">I found these tutorials sometimes more helpful than the official wagtail documentation.</a></p>
-<p><a href="https://www.youtube.com/channel/UCwbsAsY_C6EmGI6_JHhECEQ">Coding for Everybody also has some excellent wagtail video tutorials.</a> I really enjoy his laid-back teaching style and he tends to explain things pretty thoroughly. Highly recommend. </p>
-<p><a href="http://docs.wagtail.io/en/latest/topics/streamfield.html#streamfield">I use streamfield blocks for my editing interface.</a> It just gives me more flexiblity with the types of content I want to post.</p>
-<p><a href="https://github.com/springload/awesome-wagtail#bloggingnews">A github awesome list</a> containing different packages you can add to your wagtail interface and other cool resources that the wagtail community has built.</p>
-<p><a href="https://github.com/wagtail/wagtail">The github repo containing the source code for wagtail.</a> Here I was able to find some html files that I needed in order to customize my blog. For instance, I altered the table.html file for my recipe ingredients tables so that they functioned in the way I wanted: checkboxes before every ingredient, etc.</p>
+            <p>Everything was running fine locally, I was able to get wagtail's CMS up and running from their <a href="http://docs.wagtail.io/en/v2.6.1/getting_started/tutorial.html">tutorials</a>.</p>
+<p>Once I was convinced that I had all the components of wagtail's cms intact (uploading images, templates looking nice, blog index page figured out) I attempted to move everything up to my staging environment. It was semi-catastrophic. (Which BTW is why I love having this testing environment) </p>
+<p>The first error I received when I pushed everything to my staging server was the heroku "application error" page:</p>
+<p><img alt="heroku error page" src="../../../../../img/heroku_error.png"></p>
+<p>was telling me:</p>
+<p>ModuleNotFoundError: No module named 'wagtail' Exception</p>
+<p>I was really scratching my head over this one. I clearly had the wagtail module installed on my local environment because I was working fine with it, updating posts and everything. Turns out I neglected to download a package called:</p>
+<p><a href="https://pypi.org/project/django-toolbelt/">django-toolbelt</a>, which will properly install all the packages required for running a django project on heroku. </p>
+<p>I then attempted to load my page, and was presented with:</p>
+<p>Server Error (500)</p>
+<p>That's it, nothing else on the page.</p>
+<p>I took this in an exercise to get better at diagnostics. I realized that I am not anywhere close to being able indentify hints to see where the issues lie. At this point, I wasn't even sure where to look. </p>
+<p>I learned two ways to diagnose errors. </p>
+<ol>
+<li>
+<p>The first was using logentries through my heroku account. This, however, yeilded the same information:</p>
+<p><img alt="heroku fatal" src="../../../../../img/heroku_fatal.png"> 
+The same 500's errors that don't tell me anything at all!</p>
+</li>
+<li>
+<p>Turning on DEBUG=TRUE in my settings.py (duh)</p>
+</li>
+</ol>
+<p>I realize that I messed with this setting for so long, adding a secret key and whatever, but completely forgot that this was an option. This one yeilded me the most information because django really goes into line by line details for the errors, which was described as:</p>
+<p>ProgrammingError relation "wagtailcore_site" does not exist</p>
+<p>This one I had to dive deep because I'm still learning the ropes here. When I saw the word 'relation' I knew it had to be my database. I decided to go back and explore my settings.py file, and saw that I still had my SQLite3 database installed. 🤦🏻‍♀️</p>
+<p>I've messed up this site before. Past the point of no return, and rebuilt it from the ground up. In doing so, I thought that I had changed my database over to something else, anything else other SQLite3, but apparently I forgot that step. It probably didn't make a difference though because I was not storing anything in the database yet, nor was it launched to my production server.</p>
+<p>So, I migrated what little data I had created with my blog information into a postgreSQL database. It was much more straightforward than I thought it would be. I just followed these instructions: </p>
+<p><a href="https://gist.github.com/sirodoht/f598d14e9644e2d3909629a41e3522ad">How to migrate Django from SQLite to postgreSQL</a></p>
+<p>but I had to add one step due to an error that my database had foreign key contraints:</p>
+<p><code>TRUNCATE django_content_type CASCADE;</code></p>
+<p>and while this seemed to move everyting perfectly to a new postgreSQL database beautifully and I was able to see all my posts locally, my staging server was still giving me errors. </p>
+<p>This part is what took me the longest, but is perhaps the most important thing I learned during this process:</p>
+<p>how to run bash on my staging servers!</p>
+<p>Honestly, something I was unaware that I could do but game changing. It just puts everything in perspective for me: the virtual environment, and how heroku imitates this environment to serve my application that I built. So in essense, everyting that I was doing here locally, would have to be done identically on their server to get the same results. I finally understood what "ProgrammingError relation "wagtailcore_site" does not exist" meant. Heroku can't find my database/data!</p>
+<p>This post on <a href="https://stackoverflow.com/questions/38134535/django-on-heroku-relation-does-not-exist">migrating using bash on the hosting servers really was a 💡</a>.</p>
+<p>I was able to execute the same commands I did locally, installing the database and migrating the data for my staging server. And it works. I now have a cms functioning for my site, held together with hope and duct tape.</p>
+<hr>
+<p>Resources:</p>
+<p>Coding for Everybody's <a href="https://www.youtube.com/watch?v=RQ0eKv6HrpM">How to deploy Wagtail using Heroku</a></p>
+<p>Wagtails' blog post on <a href="https://wagtail.io/blog/wagtail-heroku-2017/">heroku deployment</a></p>
 
 
             
@@ -114,7 +137,7 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-08-01T00:00:00+02:00">Aug 1, 2019</time>
+            <time itemprop="dateCreated" datetime="2019-09-05T00:00:00+02:00">Sep 5, 2019</time>
             <h4>Category</h4>
             <a class="category-link" href="../../../../../categories.html#general-ref">General</a>
             <h4>Tags</h4>
@@ -122,11 +145,17 @@
                 <li><a href="../../../../../tags#django-ref">Django
                     <span>3</span>
 </a></li>
+                <li><a href="../../../../../tags#heroku-ref">Heroku
+                    <span>1</span>
+</a></li>
                 <li><a href="../../../../../tags#python-ref">Python
                     <span>5</span>
 </a></li>
                 <li><a href="../../../../../tags#tasty-pastry-ref">Tasty Pastry
                     <span>3</span>
+</a></li>
+                <li><a href="../../../../../tags#wagtail-ref">Wagtail
+                    <span>1</span>
 </a></li>
             </ul>
 <h4>Stay in Touch</h4>
