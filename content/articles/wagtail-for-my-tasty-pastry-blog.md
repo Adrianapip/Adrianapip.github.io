@@ -17,7 +17,7 @@ Copying and pasting got real tedious, real fast.
 
 It was time to move onto a content management system (cms) to maintain my files. 
 
-I'm aware of different established populare cms's: wordpress, etc. However. I'm a complicated creature. I have this tendancy to try to combine everything I know into a single project as to potentially yield the best/most efficient set of results. 🤔
+I'm aware of different established popular cms's: wordpress, etc. However. I'm a complicated creature. I have this tendancy to try to combine everything I know into a single project as to potentially yield the best/most efficient set of results. 🤔
 
 If I were keen on learning how to bake really well, I would just go with wordpress, or squarespace, and focus on my writing and baking. But, I'm also interested in becoming a better programmer. So let's combine the two and design this damn thing from the ground up! 
 
@@ -31,7 +31,7 @@ Working with an app that already has lots of documentation allows me to understa
 
 If you're looking for a CMS that has good documentation, from a beginner's perspective, this may be a place to start. 
 
-###Here are some good references that may help you alond your wagtail journey:   
+###Here are some good references that may help you along your wagtail journey:   
 
 [I found these tutorials sometimes more helpful than the official wagtail documentation.](https://www.accordbox.com/blog/wagtail-tutorials-building-blog-part-2/)
 
